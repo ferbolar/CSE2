@@ -32,7 +32,7 @@ public class BoolaBoola {
         d4=(int)(Math.random()*5+1);
     
         //switch statement to define true or false
-        switch (d1){
+        switch (d1){//get value of first variable
             case 1: x1=true;
             break;
             case 2: x1=true;
@@ -55,7 +55,7 @@ public class BoolaBoola {
             break;
             
         }
-        switch (d2){
+        switch (d2){//get value on second variable
             case 1: x2=true;
             break;
             case 2: x2=true;
@@ -78,7 +78,7 @@ public class BoolaBoola {
             break;
             
         }
-        switch (d3){
+        switch (d3){//get value of third variable
             case 1: x3=true;
             break;
             case 2: x3=true;
@@ -108,7 +108,7 @@ public class BoolaBoola {
         boolean a3=x1&&x2||x3;
         boolean a4=x1&&x2&&x3;
         
-        switch (d4){
+        switch (d4){//switch statement to do random numbers
             case 1:
                 System.out.println("Does "+x1+" || "+x2+" || "+x3+" have the value true (T or t) or false (F or f)? ");
                 lChoice=myScanner.nextLine();
@@ -129,7 +129,7 @@ public class BoolaBoola {
                 }
             break;
                 
-            case 2:
+            case 2:// second way to put it
                 System.out.println("Does "+x1+" || "+x2+" && "+x3+" have the value true (T or t) or false (F or f)? ");
                 lChoice=myScanner.nextLine();
                 if (lChoice.equals("T") && a2==true){
@@ -149,7 +149,7 @@ public class BoolaBoola {
                 }
             break;
                 
-            case 3:
+            case 3://third case of ways to put it
                 System.out.println("Does "+x1+" && "+x2+" || "+x3+" have the value true (T or t) or false (F or f)? ");
                 lChoice=myScanner.nextLine();
                 if (lChoice.equals("T") && a3==true){
@@ -169,7 +169,7 @@ public class BoolaBoola {
                 }
             break;
                 
-            case 4:
+            case 4://fourth case of ways to put it 
                 System.out.println("Does "+x1+" && "+x2+" && "+x3+" have the value true (T or t) or false (F or f)? ");
                 lChoice=myScanner.nextLine();
                 if (lChoice.equals("T") && a4==true){

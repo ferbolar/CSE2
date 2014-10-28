@@ -22,9 +22,9 @@ public class HW8{
   
   public static char getInput(Scanner input, String string){//method for the first part of the program
     while (true){
-        String Input = input.next();//input a char
-        if (Input.length() == 1){
-            char nInput = Input.charAt(0);
+        String Input = input.next();//input a string
+        if (Input.length() == 1){//if statement for only one character
+            char nInput = Input.charAt(0);//turn it into a char
             if (nInput == 'C' || nInput == 'c'){//if statement to return char
                 return nInput;//return char
             }
@@ -44,9 +44,9 @@ public class HW8{
     n = 1;//counter
     char nInput = ' ';
     while (n <= 5){//while loop for five tries
-        String Input = input.next();//input char
-        if (Input.length() == 1){
-            nInput = Input.charAt(0);
+        String Input = input.next();//input string
+        if (Input.length() == 1){//if statement for only one character
+            nInput = Input.charAt(0);//turn it into a char
             if (n == 5){//if statement for when you waste your tries
                 System.out.println("You failed after 5 tries.");
                 return nInput = ' ';//return input
@@ -73,9 +73,9 @@ public class HW8{
   public static char getInput(Scanner input, String string, String n){//method for the last part of the program
     System.out.print("Enter one of: '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'- ");
     while (true){
-        String Input = input.next();//input char
-        if (Input.length() == 1){
-            char nInput = Input.charAt(0);
+        String Input = input.next();//input string
+        if (Input.length() == 1){//if statement for only one character
+            char nInput = Input.charAt(0);//turn it into a char
             if (nInput == '0' || nInput == '1' || nInput == '2' || nInput == '3' || nInput == '4' || nInput == '5' || nInput == '6' || nInput == '7' || nInput == '8' || nInput == '9'){
                 return nInput;//return the input
             }

@@ -120,6 +120,7 @@ public class PokerHands {
 			int [] checkHand={ace, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, jack, queen, king};
 			int twoPair=0;
 			int fullHouse=0;
+			int straight=0;
 			for (int w=0; w<12; w++){//check to se what type of hand you have
 				for(int r=1; r<12; r++){
 					if(checkHand[w]==2 && checkHand[r]==2){
@@ -127,6 +128,9 @@ public class PokerHands {
 					}
 					else if(checkHand[w]==3 && checkHand[r]==2){
 						fullHouse=1;
+					}
+					else if(checkHand[w]==1 && checkHand[w+1]==1 && checkHand[w+2]==1 && checkHand[w+3]==1 && checkHand[w+4]==1){
+						straight=1;
 					}
 				}
 			}
@@ -143,6 +147,9 @@ public class PokerHands {
 			}
 			else if(fullHouse==1){
 				System.out.println("This is a full house");
+			}
+			else if (straight==1){
+				System.out.println("This is a straight");
 			}
 			
 		}
